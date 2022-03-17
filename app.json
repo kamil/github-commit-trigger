@@ -1,0 +1,25 @@
+{
+  "name": "github-commit-trigger",
+  "description": "",
+  "keywords": ["github", "commit"],
+  "repository": "https://github.com/kamil/github-commit-trigger",
+  "env": {
+    "SECRET_PATH": {
+      "description": "A secret path to trigger action, add /SECRET_PATH",
+      "generator": "secret"
+    },
+    "REPOSITORY_NAME": {
+      "description": "GitHub repository name"
+    },
+    "REPOSITORY_OWNER": {
+      "description": "GitHub repository owner (eg. your username)"
+    },
+    "GITHUB_TOKEN": {
+      "description": "GitHub token with repo* scope"
+    },
+    "REPOSITORY_BRANCH": {
+      "description": "GitHub branch to trigger action on",
+      "value": "main"
+    }
+  }
+}
